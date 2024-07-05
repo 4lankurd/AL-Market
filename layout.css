@@ -59,8 +59,8 @@ body {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    font-size: clamp(1.1rem, (1.6vw), 2rem);
-    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    font-size: clamp(0.7rem, (1.6vw), 2rem);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
 }
 
@@ -85,7 +85,7 @@ body {
     padding: 0.4em;
     cursor: pointer;
     border: 1px solid lightgrey;
-    font-size: clamp(0.7rem, (1.3vw), 2rem);
+    font-size: clamp(0.7rem, (1.6vw), 2rem);
     transition: all 0.5s;
 
 }
@@ -95,15 +95,14 @@ body {
     background-color: #f7e4e4d9;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0);
-    padding: 0.4em;
     cursor: pointer;
     border: 1px solid lightgrey;
 }
 
 .navbar ul li input {
-    width: clamp(7rem, (14vw), 18rem);
+    width: clamp(5rem, (14vw), 18rem);
     font-size: clamp(0.7rem, (1.3vw), 2rem);
-    padding: 8px;
+    padding:0.5em;
     border-radius: 12px;
     border: 1.5px solid lightgrey;
     outline: none;
@@ -112,16 +111,13 @@ body {
 }
 
 .input:hover {
-    padding: 10px;
     box-shadow: 0px 0px 20px -17px;
     box-shadow: -12px 12px 6px rgba(0, 0, 0, 0.2), -10px 8px 12px rgba(0, 0, 0, 0.14), 4px -4px 4px rgba(0, 0, 0, 0.12);
     transition: 0.5s;
 
 }
 
-.input:active {
-    transform: scale(0.95);
-}
+
 
 .input:focus {
     border: 2px solid grey;
@@ -161,7 +157,7 @@ section {
 
     gap: 20px;
     opacity: 0%;
-    font-size: clamp(1rem, (1.7vw), 2rem);
+    font-size: clamp(0.7rem, (1.7vw), 2rem);
     backdrop-filter: blur(4px);
 
 
@@ -186,7 +182,7 @@ h1 {
     text-align: center;
     padding: 1em;
     text-shadow: 1px 1px 20px #cec7bf38;
-    font-size: clamp(1.5rem, (2.3vw), 2.5rem);
+    font-size: clamp(1.2rem, (2.3vw), 2.5rem);
     text-transform: uppercase;
 
 }
@@ -241,8 +237,10 @@ main .card {
     -webkit-backdrop-filter: blur(50px) saturate(200%);
     background-color: transparent(#07161b);
     border-radius: 12px;
-    font-size: clamp(1rem, (1.2vw), 2rem);
+    font-size: clamp(0.8rem, (1.2vw), 2rem);
     margin: 2em 0 0 0;
+    width: clamp(10rem, (18vw), 24rem);
+
     
 
 
@@ -261,24 +259,27 @@ main .card {
     align-items: center;
     justify-content: space-between;
     padding-left: 1em;
-    margin: 1em 0 0.5em 0;
+    margin: 1em 0 ;
 
 }
 
 .Obtn {
+    font-size: clamp(0.6rem, (1vw), 1.2rem);
+
     color: #cec7bf;
     background-color: #3d737f;
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid rgba(255, 255, 255, 0);
-    margin: 1em ;
+    margin-right: 1em ;
     padding: 0.5em;
     cursor: pointer;
     display: flex;
     
+    align-items: center;
+    justify-content: center;
     font-style: normal;
-    align-self: center;
-    gap: 6px;
-
+    text-align: center;
+    gap: 0.5em;
 
 }
 
@@ -292,16 +293,16 @@ main .card {
 
 .card .pimg {
     align-self: center;
-    width: 200px;
-    height: 200px;
+    width: clamp(8rem, (16vw), 18rem);
+    height:clamp(8rem, (16vw), 18rem);
     border-radius: 15px;
     margin: 1em;
 }
 
 .Obtn img {
 
-    height: 18px;
-    width: 22px;
+    width: clamp(1rem, (1.5vw), 2rem);
+    height:clamp(0.9rem, (1.5vw), 2rem);
 
 }
 
@@ -312,6 +313,8 @@ footer {
     font-size: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 1em;
     margin: 0;
     color: #cec7bf;
@@ -322,14 +325,18 @@ footer {
 }
 
 footer:hover{
-    background-color: #1a3139;
     color: #f8f4ef;
 
 }
 
 .flink {
-    margin: auto;
-    margin-right: 1em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;    
+    margin-right: 0.5em;
+}
+.flink a img:hover{
+    background-color: #1e3741;
 }
 
 @media (width <=576px) {
@@ -339,7 +346,7 @@ footer:hover{
 
     .navbar ul {
         display: flex;
-        gap: 1em;
+        gap: 0.5em;
         margin: 1em;
     }
 
@@ -359,6 +366,9 @@ footer:hover{
 
 
     }
+   .obtn{
+    padding: 0.3em;
+   }
 
     .products{
         gap: 1em;
