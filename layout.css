@@ -43,6 +43,7 @@ body {
 }
 
 .navbar ul li {
+    display: flex;
     margin: auto 2em auto 0px;
     padding: auto;
     transition: 0.5s all ease-in-out;
@@ -59,7 +60,7 @@ body {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    font-size: clamp(0.7rem, (1.6vw), 2rem);
+    font-size: clamp(0.8rem, (1.6vw), 2rem);
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
 }
@@ -69,7 +70,7 @@ body {
     border-radius: 20px;
     transition: 0.6s ease-in-out;
     box-shadow: -12px 12px 6px rgba(0, 0, 0, 0.2), -10px 8px 12px rgba(0, 0, 0, 0.14), 4px -4px 4px rgba(0, 0, 0, 0.12);
-    padding: 0.2em 0.1em;
+    padding: 0.4em 0.4em;
     color: #f7fffa;
 
 
@@ -233,9 +234,8 @@ main {
 main .card {
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(50px) saturate(200%);
-    -webkit-backdrop-filter: blur(50px) saturate(200%);
-    background-color: transparent(#07161b);
+ 
+    background-color: #101e23;
     border-radius: 12px;
     font-size: clamp(0.8rem, (1.2vw), 2rem);
     margin: 2em 0 0 0;
@@ -249,7 +249,7 @@ main .card {
 
 .card:hover {
     transition: 0.5s;
-    box-shadow: 0 8px 50px hsla(0, 0%, 0%, 0.2), 0 8px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 16px 12px 6px rgba(0, 0, 0, 0.2), 12px 8px 12px rgba(0, 0, 0, 0.14), 4px 4px 4px rgba(0, 0, 0, 0.12);
     transform: translatey(-5px);
 }
 
@@ -293,10 +293,10 @@ main .card {
 
 .card .pimg {
     align-self: center;
-    width: clamp(8rem, (16vw), 18rem);
-    height:clamp(8rem, (16vw), 18rem);
-    border-radius: 15px;
-    margin: 1em;
+    width: clamp(9rem, (16vw), 18rem);
+    height:clamp(9rem, (16vw), 18rem);
+    border-radius: 10px;
+    margin: 0.5em;
 }
 
 .Obtn img {
@@ -371,7 +371,7 @@ footer:hover{
    }
 
     .products{
-        gap: 1em;
+        gap:1em;
     }
 
 
