@@ -60,7 +60,7 @@ body {
     text-decoration: none;
     color: inherit;
     font-weight: bold;
-    font-size: clamp(0.8rem, (1.6vw), 2rem);
+    font-size: clamp(0.75rem, (1.6vw), 2rem);
     transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 
 }
@@ -204,7 +204,7 @@ main {
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
-    gap: 6em;
+    gap: 1em;
     transition: all 0.5s ;
 }
 
@@ -234,14 +234,12 @@ main {
 main .card {
     display: flex;
     flex-direction: column;
- 
     background-color: #101e23;
     border-radius: 12px;
     font-size: clamp(0.8rem, (1.2vw), 2rem);
-    margin: 2em 0 0 0;
-    width: clamp(10rem, (18vw), 24rem);
-
-    
+    width: clamp(10rem, (20vw), 23rem);
+    height:clamp(14rem, (28vw), 28rem);
+    justify-content: space-between;
 
 
 
@@ -293,8 +291,8 @@ main .card {
 
 .card .pimg {
     align-self: center;
-    width: clamp(9rem, (16vw), 18rem);
-    height:clamp(9rem, (16vw), 18rem);
+    width: clamp(9rem, (18vw), 23rem);
+    height:clamp(9rem, (20vw), 24rem);
     border-radius: 10px;
     margin: 0.5em;
 }
